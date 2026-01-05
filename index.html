@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnia - NoteBlock</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+    <body>
+        <div class="cabecalho">
+            <img src="./src/img/Omnia.png"><h1>Omnia</h1>
+        </div><br>
+
+        <div class="pai">
+            <div class="caixaE"><textarea class="bloco" id="nota" autocomplete="off"></textarea>
+            
+            </div>
+
+            <div class="caixaD">
+                <button class="botaoLoad" id="save"><b>- Salvar -</b></button>
+                <button class="botaoLoad" id="export"><b>- Exportar -</b></button>
+                    <div class="pulobonito"></div>
+                <button class="botaoLoad" id="load"><b>- Carregar -</b></button>
+                <button class="botaoLoad" id="import"><b>- Importar -</b></button>
+            </div>
+        </div>
+
+        <!--Scripts-->
+            <script type="importmap">
+                "imports":{
+                    "three":"https://threejs.org/build/three.module.js"
+                }
+            </script>
+            <script type="module" src="./src/js/mainThree.js"></script>
+            <script src="./src/js/main.js"></script>
+        <!--Scripts-->
+    </body>
+
+</html>

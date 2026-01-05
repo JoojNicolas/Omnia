@@ -1,0 +1,176 @@
+:root{
+
+    /* Paleta de Cores */
+    --corMain:#1b1b1b ;
+    --corSec: #5ce088 ;
+    --corTer: #178b4b ;
+    --corTexto: #caffca ;
+    --corExtra: #354e3dad ;
+
+}
+
+/* 
+Tags originais abaixo
+Tags originais abaixo
+Tags originais abaixo
+*/
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--corTexto);
+}
+
+body{
+    background: var(--corMain);
+    margin: 15px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 2px solid var(--corSec);
+    border-radius: 15px;
+    height: 100%;
+    min-height: 92vh;  
+}
+
+h1{
+    font-size: 50px;
+}
+
+textarea{
+    resize: none;
+}
+
+textarea::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--corSec);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
+  background: var(--corMain);
+  border: 1px solid var(--corSec);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+/* 
+Tags originais acima 
+Tags originais acima 
+Tags originais acima 
+*/
+
+.bloco{
+    background: none;
+    border:2px solid var(--corSec);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 97.5%;
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.bloco:focus, .bloco:active{
+    border: 2px dashed var(--corTer);
+    outline: none;
+}
+
+.caixaE, .caixaD{
+    gap: 8px;
+    display: flex;
+    padding: 15px;
+    border: 2px solid var(--corSec);
+    border-radius: 7.5px;
+    background: var(--corExtra);
+    backdrop-filter: blur(3px);
+    height: 75vh;
+}
+
+.caixaE{
+    width: 75vw;
+}
+
+.caixaD{
+    align-items: center;
+    flex-direction: column;
+    width: 15vw;
+}
+
+/*
+Botoes Abaixo
+Botoes Abaixo
+Botoes Abaixo
+*/
+
+button{
+    padding: 5px;
+}
+
+.botaoLoad{
+    background: var(--corMain);
+    word-break: break-all;
+    padding: 10px;
+    color: var(--corTexto);
+    border: 2px solid var(--corSec);
+    border-radius: 10px;
+    font-size: 25px;
+    min-width: 200px;
+    transition: all 0.4s;
+}
+
+.botaoLoad:hover{
+    background: var(--corTer);
+    color: var(--corMain);
+    border: 2px dotted var(--corTexto);
+    border-radius: 15px;
+    transform: scale(1.1, 1.1);
+}
+
+.botaoLoad:active{
+    transform: scale(0.8, 0.8);
+}
+
+/*
+Botoes Acima
+Botoes Acima
+Botoes Acima
+*/
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    text-shadow: 5px 5px 10px var(--corTer);
+}
+
+.cabecalho img{
+    height: 100px;
+    width: auto;
+    padding-right: 15px;
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pulobonito{
+    width: 100%;
+    height:2px;
+    background: var(--corSec);
+    border: 1px solid var(--corSec);
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#c{
+    height: 100%;
+    width: 100%;
+}
+
