@@ -51,10 +51,14 @@ textarea::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
-  background: var(--corMain);
-  border: 1px solid var(--corSec);
-  border-radius: 10px;
-  transition: all 0.5s;
+    background: var(--corMain);
+    border: 1px solid var(--corSec);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+input{
+    display: none;
 }
 
 /* 
@@ -108,6 +112,14 @@ Botoes Abaixo
 
 button{
     padding: 5px;
+}
+
+
+label.botaoLoad{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .botaoLoad{
